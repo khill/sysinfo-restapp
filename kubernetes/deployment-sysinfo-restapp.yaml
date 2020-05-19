@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sysinfo-restapp
+  namespace: sysinfo-restapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sysinfo-restapp
+  template:
+    metadata:
+      labels:
+        app: sysinfo-restapp
+    spec:
+      containers:
+      - name: sysinfo-restapp
+        image: khill/sysinfo-restapp-raspbian:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
