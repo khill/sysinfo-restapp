@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM arm32v7/ubuntu:latest
 
 LABEL maintainer="Kevin Hill <khill@khill.org>"
 
