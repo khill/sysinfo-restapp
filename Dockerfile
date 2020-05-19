@@ -1,6 +1,6 @@
 FROM arm32v7/ubuntu:latest
 
-LABEL maintainer="Kevin Hill <khill@khill.org>"
+LABEL maintainer="Kevin Hill"
 
 RUN apt-get update -y
 RUN apt-get install -y --no-install-recommends python3 python3-virtualenv python3-pip
